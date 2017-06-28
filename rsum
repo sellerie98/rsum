@@ -3,6 +3,6 @@ if [[ $4 != "" ]]
 	then
 	echo -e "Too many arguments!\nSyntax: \e[1mrsum\e[0m <md5||sha|sha1|sha256|sha348|sha512> <path> <destination file>"
 else
-find "$2" -type f -print0 | xargs -0 "$1"sum > "$3"
+find "$2" -type f -print0 | xargs -0 "$1"sum > '$3'
 fi
 
